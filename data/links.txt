@@ -1,0 +1,5 @@
+https://www.mikroe.com/gsm-gnss-click
+
+https://www.codico.com/shop/media/datasheets/Quectel_MC60_Hardware_Design_V1.0_Preliminary_20160602.pdf
+
+http://satronel.com/product/Quectel/MC60#documentation

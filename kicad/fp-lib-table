@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name MC60)(type Legacy)(uri /home/samata/Desktop/MC60/MC60_kicad/MC60.mod)(options "")(descr ""))
+  (lib (name mc60_fp)(type KiCad)(uri "$(KIPRJMOD)/mc60_fp.pretty")(options "")(descr ""))
+)

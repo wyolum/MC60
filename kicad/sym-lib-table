@@ -1,0 +1,7 @@
+(sym_lib_table
+  (lib (name mc60_library)(type Legacy)(uri /home/samata/projects-git/MC60/kicad/mc60_symbols/mc60_library.lib)(options "")(descr ""))
+  (lib (name ClockIOT)(type Legacy)(uri ${KIPRJMOD}/mc60_symbols/ClockIOT.lib)(options "")(descr ""))
+  (lib (name dh)(type Legacy)(uri ${KIPRJMOD}/mc60_symbols/dh.lib)(options "")(descr ""))
+  (lib (name haathi)(type Legacy)(uri ${KIPRJMOD}/mc60_symbols/haathi.lib)(options "")(descr ""))
+  (lib (name wyostat)(type Legacy)(uri ${KIPRJMOD}/mc60_symbols/wyostat.lib)(options "")(descr ""))
+)

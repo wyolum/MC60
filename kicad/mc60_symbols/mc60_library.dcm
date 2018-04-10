@@ -1,5 +1,15 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP Antenna_Chip
+D Ceramic Chip Antenna symbol with pin for PCB trace
+K antenna
+$ENDCMP
+#
+$CMP Conn_Coaxial
+D coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, ...)
+K BNC SMA SMB SMC coaxial connector CINCH RCA
+$ENDCMP
+#
 $CMP SIM_Card
 D SIM Card
 K SIM card UICC

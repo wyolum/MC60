@@ -10,6 +10,11 @@ D coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, ...)
 K BNC SMA SMB SMC coaxial connector CINCH RCA
 $ENDCMP
 #
+$CMP DTC114E
+D Digital PNP Transistor, 10k/10k, SOT-23
+K ROHM Digital PNP Transistor
+$ENDCMP
+#
 $CMP SIM_Card
 D SIM Card
 K SIM card UICC

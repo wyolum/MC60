@@ -1,11 +1,11 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# ClockIOT_GND
+# ClockIOT:GND
 #
-DEF ~ClockIOT_GND #PWR 0 0 Y Y 1 F P
+DEF ~ClockIOT:GND #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 0 30 H I C CNN
-F1 "ClockIOT_GND" 0 -75 30 H I C CNN
+F1 "ClockIOT:GND" 0 -75 30 H I C CNN
 F2 "" 0 0 60 H V C CNN
 F3 "" 0 0 60 H V C CNN
 DRAW
@@ -14,11 +14,11 @@ X GND 1 0 0 0 U 30 30 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# mc60_library_Antenna_Chip
+# mc60_library:Antenna_Chip
 #
-DEF mc60_library_Antenna_Chip AE 0 40 N N 1 F N
+DEF mc60_library:Antenna_Chip AE 0 40 N N 1 F N
 F0 "AE" 0 225 50 H V R CNN
-F1 "mc60_library_Antenna_Chip" 0 125 50 H V R CNN
+F1 "mc60_library:Antenna_Chip" 0 125 50 H V R CNN
 F2 "" -100 200 50 H I C CNN
 F3 "" -100 200 50 H I C CNN
 DRAW
@@ -42,11 +42,11 @@ X PCB_Trace 2 100 -175 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# mc60_library_C_NP
+# mc60_library:C_NP
 #
-DEF mc60_library_C_NP C 0 10 N N 1 F N
+DEF mc60_library:C_NP C 0 10 N N 1 F N
 F0 "C" -100 100 40 H V L CNN
-F1 "mc60_library_C_NP" 0 -150 40 H V L CNN
+F1 "mc60_library:C_NP" 0 -150 40 H V L CNN
 F2 "" 0 0 60 H V C CNN
 F3 "" 0 0 60 H V C CNN
 $FPLIST
@@ -62,11 +62,32 @@ X - 2 0 -150 100 U 40 40 1 1 P
 ENDDRAW
 ENDDEF
 #
-# mc60_library_Conn_Coaxial
+# mc60_library:C_POL
 #
-DEF mc60_library_Conn_Coaxial CN 0 40 N N 1 F N
+DEF mc60_library:C_POL C 0 10 N N 1 F N
+F0 "C" -100 100 40 H V L CNN
+F1 "mc60_library:C_POL" 0 -150 40 H V L CNN
+F2 "" 0 0 60 H V C CNN
+F3 "" 0 0 60 H V C CNN
+$FPLIST
+ SM*
+ C?
+ C1-1
+$ENDFPLIST
+DRAW
+T 0 45 85 50 0 0 0 + Normal 1 C C
+S -75 50 75 25 0 1 0 f
+S 75 -50 -75 -25 0 1 0 F
+X + 1 0 150 100 D 40 40 1 1 P
+X - 2 0 -150 100 U 40 40 1 1 P
+ENDDRAW
+ENDDEF
+#
+# mc60_library:Conn_Coaxial
+#
+DEF mc60_library:Conn_Coaxial CN 0 40 N N 1 F N
 F0 "CN" 10 120 40 H V C CNN
-F1 "mc60_library_Conn_Coaxial" 115 0 40 V V C CNN
+F1 "mc60_library:Conn_Coaxial" 115 0 40 V V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -85,11 +106,11 @@ X Ext 2 0 -175 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# mc60_library_DTC114E
+# mc60_library:DTC114E
 #
-DEF mc60_library_DTC114E Q 0 0 Y N 1 F N
+DEF mc60_library:DTC114E Q 0 0 Y N 1 F N
 F0 "Q" -150 300 40 H V L CNB
-F1 "mc60_library_DTC114E" -150 225 40 H V L CNN
+F1 "mc60_library:DTC114E" -150 225 40 H V L CNN
 F2 "" -250 0 50 H I L CNN
 F3 "" -250 0 50 H I L CNN
 $FPLIST
@@ -127,11 +148,53 @@ X C 3 250 125 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# mc60_library_Diode_TVS
+# mc60_library:DTC143
 #
-DEF mc60_library_Diode_TVS D 0 40 Y Y 1 F N
+DEF mc60_library:DTC143 Q 0 0 Y N 1 F N
+F0 "Q" -150 300 40 H V L CNB
+F1 "mc60_library:DTC143" -150 225 40 H V L CNN
+F2 "" -250 0 50 H I L CNN
+F3 "" -250 0 50 H I L CNN
+$FPLIST
+ SOT?23*
+ SC?59*
+$ENDFPLIST
+DRAW
+A -100 -201 49 -900 1789 0 1 20 N -100 -250 -150 -200
+A -100 126 49 900 -1789 0 1 20 N -100 175 -150 125
+A 100 126 49 900 -11 0 1 20 N 100 175 150 125
+A 101 -200 49 0 -911 0 1 20 N 150 -200 100 -250
+C 110 -200 5 0 0 0 N
+C 20 0 5 0 1 0 N
+T 900 20 -120 20 0 0 0 47k Normal 0 C C
+T 0 -55 0 20 0 0 0 4k7 Normal 0 C C
+S -10 20 -100 -20 0 1 0 f
+S 0 -75 40 -165 0 1 0 f
+S 45 60 55 -60 0 1 0 N
+P 2 0 0 20 -150 -200 -150 125 N
+P 2 0 0 0 -100 0 -150 0 N
+P 2 0 0 20 -100 175 100 175 N
+P 2 0 0 20 100 -250 -100 -250 N
+P 2 0 0 0 110 -90 110 -200 N
+P 2 0 0 20 150 125 150 -200 N
+P 3 0 0 0 150 -200 20 -200 20 -165 N
+P 3 0 0 0 150 125 110 125 110 90 N
+P 2 0 1 0 20 -75 20 0 N
+P 2 0 1 0 50 -30 110 -90 N
+P 2 0 1 0 50 0 -10 0 N
+P 2 0 1 0 50 30 110 90 N
+P 4 0 1 0 110 -90 90 -50 70 -70 110 -90 F
+X B 1 -250 0 100 R 50 50 1 1 I
+X E 2 250 -200 100 L 50 50 1 1 P
+X C 3 250 125 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# mc60_library:Diode_TVS
+#
+DEF mc60_library:Diode_TVS D 0 40 Y Y 1 F N
 F0 "D" 200 -200 50 H V C CNN
-F1 "mc60_library_Diode_TVS" -300 0 50 V V C CNN
+F1 "mc60_library:Diode_TVS" -300 0 50 V V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -190,11 +253,11 @@ X ~ 7 -200 -250 100 U 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# mc60_library_LED
+# mc60_library:LED
 #
-DEF mc60_library_LED D 0 40 N N 1 F N
+DEF mc60_library:LED D 0 40 N N 1 F N
 F0 "D" 0 100 40 H V C CNN
-F1 "mc60_library_LED" 0 -100 40 H V C CNN
+F1 "mc60_library:LED" 0 -100 40 H V C CNN
 F2 "" 0 0 60 H V C CNN
 F3 "" 0 0 60 H V C CNN
 F4 "LED SS 5MM 625NM RED DIFF" 0 200 60 H I L CNN
@@ -224,11 +287,31 @@ X K 2 150 0 100 L 40 40 1 1 P
 ENDDRAW
 ENDDEF
 #
-# mc60_library_MC60_0
+# mc60_library:LP5907
 #
-DEF mc60_library_MC60_0 U 0 40 Y Y 1 L N
+DEF mc60_library:LP5907 U 0 40 Y Y 1 F N
+F0 "U" 0 350 50 H V C TNN
+F1 "mc60_library:LP5907" 0 250 50 H V C CNN
+F2 "Package_TO_SOT_SMD:TO-252-6" 0 -400 50 H I C CIN
+F3 "" 0 -500 50 H I C CNN
+$FPLIST
+ TSOT?23*
+$ENDFPLIST
+DRAW
+S -300 200 300 -200 0 1 20 f
+X VIN 1 -400 100 100 R 50 50 1 1 W
+X GND 2 0 -300 100 U 50 50 1 1 W
+X EN 3 -400 -100 100 R 50 50 1 1 I
+X NC 4 400 -100 100 L 50 50 1 1 I
+X VOUT 5 400 100 100 L 50 50 1 1 w
+ENDDRAW
+ENDDEF
+#
+# mc60_library:MC60_0
+#
+DEF mc60_library:MC60_0 U 0 40 Y Y 1 L N
 F0 "U" 0 500 60 H V C BNB
-F1 "mc60_library_MC60_0" 0 0 60 H V C BNB
+F1 "mc60_library:MC60_0" 0 0 60 H V C BNB
 F2 "XCVR_MC60" 0 -250 60 H I C BNB
 F3 "MC60" 0 250 60 H I C BNB
 DRAW
@@ -305,11 +388,31 @@ X Reserved 68 -1600 900 200 R 40 40 1 1 N
 ENDDRAW
 ENDDEF
 #
-# mc60_library_R
+# mc60_library:MIC29302
 #
-DEF mc60_library_R R 0 0 N Y 1 F N
+DEF mc60_library:MIC29302 U 0 40 Y Y 1 F N
+F0 "U" 0 350 50 H V C TNN
+F1 "mc60_library:MIC29302" 0 250 50 H V C CNN
+F2 "Package_TO_SOT_SMD:TO-252-6" 0 -400 50 H I C CIN
+F3 "" 0 -500 50 H I C CNN
+$FPLIST
+ TSOT?23*
+$ENDFPLIST
+DRAW
+S -300 200 300 -200 0 1 20 f
+X VIN 1 -400 100 100 R 50 50 1 1 W
+X GND 2 0 -300 100 U 50 50 1 1 W
+X EN 3 -250 -300 100 U 50 50 1 1 I
+X ADJ 4 250 -300 100 U 50 50 1 1 I
+X VOUT 5 400 100 100 L 50 50 1 1 w
+ENDDRAW
+ENDDEF
+#
+# mc60_library:R
+#
+DEF mc60_library:R R 0 0 N Y 1 F N
 F0 "R" 80 0 40 V V C CNN
-F1 "mc60_library_R" 0 0 40 V V C CNN
+F1 "mc60_library:R" 0 0 40 V V C CNN
 F2 "" -70 0 30 V V C CNN
 F3 "" 0 0 30 H V C CNN
 $FPLIST
@@ -323,11 +426,11 @@ X ~ 2 0 -150 50 U 60 60 1 1 P
 ENDDRAW
 ENDDEF
 #
-# mc60_library_SD_CARD_Micro
+# mc60_library:SD_CARD_Micro
 #
-DEF mc60_library_SD_CARD_Micro SD 0 40 Y Y 1 F N
+DEF mc60_library:SD_CARD_Micro SD 0 40 Y Y 1 F N
 F0 "SD" 150 450 60 H V C CNN
-F1 "mc60_library_SD_CARD_Micro" 400 550 60 H V C CNN
+F1 "mc60_library:SD_CARD_Micro" 400 550 60 H V C CNN
 F2 "" -100 0 60 H V C CNN
 F3 "" -100 0 60 H V C CNN
 DRAW
@@ -349,11 +452,11 @@ X ~ G4 750 -250 100 U 30 30 1 1 P
 ENDDRAW
 ENDDEF
 #
-# mc60_library_SIM_Card
+# mc60_library:SIM_Card
 #
-DEF mc60_library_SIM_Card J 0 40 Y Y 1 F N
+DEF mc60_library:SIM_Card J 0 40 Y Y 1 F N
 F0 "J" -100 500 50 H V R CNN
-F1 "mc60_library_SIM_Card" -50 400 50 H V R CNN
+F1 "mc60_library:SIM_Card" -50 400 50 H V R CNN
 F2 "" 0 350 50 H V C CNN
 F3 "" -50 0 50 H V C CNN
 $FPLIST
@@ -373,6 +476,22 @@ X CLK 3 -500 100 100 R 50 50 1 1 I
 X GND 5 -500 0 100 R 50 50 1 1 W
 X VPP 6 -500 -100 100 R 50 50 1 1 I
 X I/O 7 -500 -200 100 R 50 50 1 1 B
+ENDDRAW
+ENDDEF
+#
+# mc60_library:VBAT
+#
+DEF mc60_library:VBAT #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -50 40 H I C CNN
+F1 "mc60_library:VBAT" 0 140 40 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+F4 "mfr_pn" 0 -100 40 H I C CNN "manf#"
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X VBAT 1 0 0 0 U 40 40 1 1 W N
 ENDDRAW
 ENDDEF
 #

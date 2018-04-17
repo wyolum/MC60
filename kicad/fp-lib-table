@@ -1,5 +1,6 @@
 (fp_lib_table
   (lib (name mc60_fp)(type KiCad)(uri "$(KIPRJMOD)/mc60_fp.pretty")(options "")(descr ""))
-  (lib (name 5-1814832-1)(type Legacy)(uri /home/anool/projects-git/MC60/data/5-1814832-1/5-1814832-1.mod)(options "")(descr ""))
-  (lib (name w_conn_rf)(type Legacy)(uri /home/anool/projects-git/MC60/data/mod_conn_rf/w_conn_rf.mod)(options "")(descr ""))
+  (lib (name 5-1814832-1)(type Legacy)(uri "$(KIPRJMOD)/5-1814832-1/5-1814832-1.mod")(options "")(descr ""))
+  (lib (name w_conn_rf)(type Legacy)(uri "$(KIPRJMOD)/mod_conn_rf/w_conn_rf.mod")(options "")(descr ""))
+  (lib (name w_conn_rf2)(type KiCad)(uri "$(KIPRJMOD)/mod_conn_rf/w_conn_rf.pretty")(options "")(descr ""))
 )

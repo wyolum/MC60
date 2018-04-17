@@ -15,9 +15,31 @@ D Digital PNP Transistor, 10k/10k, SOT-23
 K ROHM Digital PNP Transistor
 $ENDCMP
 #
+$CMP DTC143
+D Digital PNP Transistor, 10k/10k, SOT-23
+K ROHM Digital PNP Transistor
+$ENDCMP
+#
+$CMP LP5907
+D IC REG LINEAR 3.3V 250MA SOT23-5
+K linear regulator ldo adjustable positive
+F http://www.ti.com/lit/ds/symlink/lp5907-q1.pdf
+$ENDCMP
+#
+$CMP MIC29302
+D IC REG LINEAR POS ADJ 3A TO252-5
+K linear regulator ldo adjustable positive
+F http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en580808
+$ENDCMP
+#
 $CMP SIM_Card
 D SIM Card
 K SIM card UICC
+$ENDCMP
+#
+$CMP VBAT
+D power-flag symbol (positive battery voltage)
+K Power Flag Symbol battery
 $ENDCMP
 #
 #End Doc Library

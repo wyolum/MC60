@@ -5,6 +5,18 @@ D Ceramic Chip Antenna symbol with pin for PCB trace
 K antenna
 $ENDCMP
 #
+$CMP Audio-Jack-4
+D 4-pin (audio) jack receptable (stereo + 4th pin/TRRS connector)
+K audio jack receptable stereo headphones TRRS connector
+F ~
+$ENDCMP
+#
+$CMP Conn_01x03
+D Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)
+K connector
+F ~
+$ENDCMP
+#
 $CMP Conn_Coaxial
 D coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, ...)
 K BNC SMA SMB SMC coaxial connector CINCH RCA
@@ -18,6 +30,27 @@ $ENDCMP
 $CMP DTC143
 D Digital PNP Transistor, 10k/10k, SOT-23
 K ROHM Digital PNP Transistor
+$ENDCMP
+#
+$CMP Diode_TVS_1
+D Bidirectional transient-voltage-suppression (TVS) diode, alternative symbol
+K diode TVS thyrector
+F https://en.wikipedia.org/wiki/Transient-voltage-suppression_diode
+$ENDCMP
+#
+$CMP GND
+D GROUND power-flag symbol
+K Power Flag Symbol
+$ENDCMP
+#
+$CMP GND_REF
+D (reference supply) ground power-flag symbol
+K Power Flag Symbol
+$ENDCMP
+#
+$CMP GND_SIM
+D (digital) ground power-flag symbol
+K Power Flag Symbol
 $ENDCMP
 #
 $CMP LP5907
@@ -35,6 +68,24 @@ $ENDCMP
 $CMP SIM_Card
 D SIM Card
 K SIM card UICC
+$ENDCMP
+#
+$CMP SolderJumper_3_Bridged12
+D 3-pole Solder Jumper, pins 1+2 closed/bridged
+K Solder Jumper SPDT
+F ~
+$ENDCMP
+#
+$CMP SolderJumper_3_Open
+D Solder Jumper, 3-pole, open
+K Solder Jumper SPDT
+F ~
+$ENDCMP
+#
+$CMP TXB0108PWR
+D IC 8-BIT TRNSTR 15KV ESD 20TSSOP
+K bidirectional voltage level translator
+F http://www.ti.com/lit/ds/symlink/txb0108.pdf
 $ENDCMP
 #
 $CMP VBAT

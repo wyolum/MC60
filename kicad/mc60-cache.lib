@@ -1,43 +1,6 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# ClockIOT:GND
-#
-DEF ~ClockIOT:GND #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 0 30 H I C CNN
-F1 "ClockIOT:GND" 0 -75 30 H I C CNN
-F2 "" 0 0 60 H V C CNN
-F3 "" 0 0 60 H V C CNN
-DRAW
-P 4 0 1 0 -50 0 0 -50 50 0 -50 0 N
-X GND 1 0 0 0 U 30 30 1 1 W N
-ENDDRAW
-ENDDEF
-#
-# dh:SW-SPST-M
-#
-DEF dh:SW-SPST-M S 0 40 N Y 1 F N
-F0 "S" 0 -175 40 H V C CNB
-F1 "dh:SW-SPST-M" 0 -100 40 H V C CNB
-F2 "" 0 0 60 H V C CNN
-F3 "" 0 0 60 H V C CNN
-DRAW
-C -50 0 25 0 1 0 N
-C 50 0 25 0 1 0 N
-S -70 50 70 70 0 1 0 F
-S -35 140 35 160 0 1 0 F
-P 2 0 1 0 -80 -50 -80 0 N
-P 2 0 1 10 -15 140 -15 70 N
-P 2 0 1 10 15 70 15 140 N
-P 2 0 1 0 80 -50 80 0 N
-P 4 0 1 0 0 125 -25 100 25 100 0 125 F
-X ~ 1 -150 0 75 R 40 40 1 1 P
-X ~ 2 150 0 75 L 40 40 1 1 P
-X ~ 3 -150 -50 70 R 40 40 1 1 P
-X ~ 4 150 -50 70 L 40 40 1 1 P
-ENDDRAW
-ENDDEF
-#
 # mc60_library:Antenna_Chip
 #
 DEF mc60_library:Antenna_Chip AE 0 40 N N 1 F N
@@ -628,6 +591,30 @@ X I/O 7 -500 -200 100 R 50 50 1 1 B
 ENDDRAW
 ENDDEF
 #
+# mc60_library:SW-SPST-M
+#
+DEF mc60_library:SW-SPST-M S 0 40 N Y 1 F N
+F0 "S" 0 -175 40 H V C CNB
+F1 "mc60_library:SW-SPST-M" 0 -100 40 H V C CNB
+F2 "" 0 0 60 H V C CNN
+F3 "" 0 0 60 H V C CNN
+DRAW
+C -50 0 25 0 1 0 N
+C 50 0 25 0 1 0 N
+S -70 50 70 70 0 1 0 F
+S -35 140 35 160 0 1 0 F
+P 2 0 1 0 -80 -50 -80 0 N
+P 2 0 1 10 -15 140 -15 70 N
+P 2 0 1 10 15 70 15 140 N
+P 2 0 1 0 80 -50 80 0 N
+P 4 0 1 0 0 125 -25 100 25 100 0 125 F
+X ~ 1 -150 0 75 R 40 40 1 1 P
+X ~ 2 150 0 75 L 40 40 1 1 P
+X ~ 3 -150 -50 70 R 40 40 1 1 P
+X ~ 4 150 -50 70 L 40 40 1 1 P
+ENDDRAW
+ENDDEF
+#
 # mc60_library:SolderJumper_3_Open
 #
 DEF mc60_library:SolderJumper_3_Open JP 0 0 Y N 1 F N
@@ -728,6 +715,19 @@ P 3 0 1 10 50 25 50 -25 0 0 N
 P 4 0 1 10 0 0 -50 25 -50 -25 0 0 F
 X A 1 -150 0 100 R 40 40 1 1 P
 X K 2 150 0 100 L 40 40 1 1 P
+ENDDRAW
+ENDDEF
+#
+# power:GND
+#
+DEF power:GND #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "power:GND" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #

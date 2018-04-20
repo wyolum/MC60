@@ -1,0 +1,37 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#(c) SnapEDA 2016 (snapeda.com)
+#This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA) with Design Exception 1.0
+#
+# SF56S006V4BR2000
+#
+DEF SF56S006V4BR2000 J 0 40 Y Y 1 L N
+F0 "J" -301 526 50 H V L BNN
+F1 "SF56S006V4BR2000" -301 -602 50 H V L BNN
+F2 "JAE_SF56S006V4BR2000" 0 0 50 H I L BNN
+F3 "https://www.digikey.in/product-detail/en/jae-electronics/SF56S006V4BR2000/670-2834-1-ND/5280152?WT.z_cid=ref_snapeda&utm_source=snapeda&utm_medium=aggregator&utm_campaign=buynow" 0 0 50 H I L BNN
+F4 "SF56S006V4BR2000" 0 0 50 H I L BNN
+F5 "SF56 series, micro-SIM card connector, push-push type, normal closed" 0 0 50 H I L BNN
+F6 "670-2834-1-ND" 0 0 50 H I L BNN
+F7 "JAE Electronics" 0 0 50 H I L BNN
+F8 "None" 0 0 50 H I L BNN
+DRAW
+P 2 0 0 10 300 500 300 -500 N
+P 2 0 0 10 300 -500 -300 -500 N
+P 2 0 0 10 -300 -500 -300 500 N
+P 2 0 0 10 -300 500 300 500 N
+X VCC C1 500 400 200 L 40 40 0 0 W 
+X VPP C6 500 300 200 L 40 40 0 0 W 
+X RST C2 -500 100 200 R 40 40 0 0 I 
+X CLK C3 -500 0 200 R 40 40 0 0 I C
+X I/O C7 500 -100 200 L 40 40 0 0 B 
+X GND C5 500 -300 200 L 40 40 0 0 W 
+X SHIELD HD1 500 -400 200 L 40 40 0 0 W 
+X SHIELD HD2,DSW1 500 -400 200 L 40 40 0 0 W 
+X SHIELD HD3 500 -400 200 L 40 40 0 0 W 
+X SHIELD HD4 500 -400 200 L 40 40 0 0 W 
+X DSW2 DSW2 500 100 200 L 40 40 0 0 O 
+ENDDRAW
+ENDDEF
+#
+# End Library

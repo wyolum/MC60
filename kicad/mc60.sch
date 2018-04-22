@@ -146,8 +146,6 @@ Wire Wire Line
 Wire Wire Line
 	10650 3150 10225 3150
 Wire Wire Line
-	10650 3350 9725 3350
-Wire Wire Line
 	9725 3350 9725 4175
 Wire Wire Line
 	9550 3050 9550 2750
@@ -171,7 +169,7 @@ Wire Wire Line
 Wire Wire Line
 	8950 3100 8950 3550
 Wire Wire Line
-	8950 3550 10425 3550
+	8950 3550 10325 3550
 $Comp
 L mc60_library:R R10
 U 1 1 5ACD3FD4
@@ -263,8 +261,6 @@ Wire Wire Line
 Wire Wire Line
 	9150 3675 9150 3250
 Connection ~ 9150 3250
-Wire Wire Line
-	9150 3250 10325 3250
 Wire Wire Line
 	8950 3675 8950 3550
 Wire Wire Line
@@ -533,16 +529,6 @@ F 3 "" H 10275 3875 50  0001 C CNN
 	1    10275 3875
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	10425 3625 10425 3550
-Connection ~ 10425 3550
-Wire Wire Line
-	10425 3550 10650 3550
-Wire Wire Line
-	10325 3625 10325 3250
-Connection ~ 10325 3250
-Wire Wire Line
-	10325 3250 10650 3250
 Wire Wire Line
 	10225 3625 10225 3150
 Connection ~ 10225 3150
@@ -3906,4 +3892,18 @@ Wire Wire Line
 	11150 4175 10075 4175
 Connection ~ 11150 3750
 Connection ~ 10075 4175
+Wire Wire Line
+	9150 3250 10425 3250
+Wire Wire Line
+	10325 3625 10325 3550
+Connection ~ 10325 3550
+Wire Wire Line
+	10325 3550 10650 3550
+Wire Wire Line
+	9725 3350 10650 3350
+Wire Wire Line
+	10425 3625 10425 3250
+Connection ~ 10425 3250
+Wire Wire Line
+	10425 3250 10650 3250
 $EndSCHEMATC

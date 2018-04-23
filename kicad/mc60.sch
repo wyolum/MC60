@@ -1547,8 +1547,8 @@ $Comp
 L mc60_library:SolderJumper_3_Open JP2
 U 1 1 5AFB7208
 P 1200 9325
-F 0 "JP2" V 1275 9400 40  0000 L CNB
-F 1 "GSM_PWR_EN" V 1200 9400 40  0000 L CNN
+F 0 "JP2" V 1325 9350 40  0000 L CNB
+F 1 "GSM_PWR_EN" H 1100 9375 40  0000 R CNN
 F 2 "mc60_fp:Pin_Header_Straight_1x03" H 1200 9325 50  0001 C CNN
 F 3 "~" H 1200 9325 50  0001 C CNN
 F 4 "mfr_pn" H 1200 9325 50  0001 C CNN "manf#"
@@ -3906,4 +3906,28 @@ Wire Wire Line
 Connection ~ 10425 3250
 Wire Wire Line
 	10425 3250 10650 3250
+$Comp
+L mc60_library:Conn_01x02 CN6
+U 1 1 5AE1C71C
+P 700 9275
+F 0 "CN6" H 600 9500 40  0000 C CNB
+F 1 "5V_IN" H 600 9400 40  0000 C CNN
+F 2 "mc60_fp:conn_screw_2.54mm_2pol" H 700 9275 50  0001 C CNN
+F 3 "" H 700 9275 50  0001 C CNN
+	1    700  9275
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	900  9275 1000 9275
+Wire Wire Line
+	1000 9275 1000 8450
+Wire Wire Line
+	1000 8450 1200 8450
+Connection ~ 1200 8450
+Wire Wire Line
+	900  9375 1000 9375
+Wire Wire Line
+	1000 9375 1000 9775
+Wire Wire Line
+	1000 9775 1200 9775
 $EndSCHEMATC

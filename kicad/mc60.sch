@@ -3930,4 +3930,10 @@ Wire Wire Line
 	1000 9375 1000 9775
 Wire Wire Line
 	1000 9775 1200 9775
+Text Label 9800 3150 0    40   ~ 8
+SIMRST
+Text Label 9800 3250 0    40   ~ 8
+SIMCLK
+Text Label 9800 3550 0    40   ~ 8
+SIMDAT
 $EndSCHEMATC

@@ -1549,7 +1549,7 @@ U 1 1 5AFB7208
 P 1200 9325
 F 0 "JP2" V 1325 9350 40  0000 L CNB
 F 1 "GSM_PWR_EN" H 1100 9375 40  0000 R CNN
-F 2 "mc60_fp:Pin_Header_Straight_1x03" H 1200 9325 50  0001 C CNN
+F 2 "mc60_fp:Pin_Header_Straight_1x03_Pitch1.27mm" H 1200 9325 50  0001 C CNN
 F 3 "~" H 1200 9325 50  0001 C CNN
 F 4 "mfr_pn" H 1200 9325 50  0001 C CNN "manf#"
 	1    1200 9325
@@ -1837,7 +1837,7 @@ U 1 1 5B3F4114
 P 13500 4825
 F 0 "JP1" H 13500 5050 50  0000 C CNB
 F 1 "3V3_EXT<>5V" H 13500 4950 40  0000 C CNN
-F 2 "mc60_fp:Pin_Header_Straight_1x03" H 13500 4825 50  0001 C CNN
+F 2 "mc60_fp:Pin_Header_Straight_1x03_Pitch1.27mm" H 13500 4825 50  0001 C CNN
 F 3 "~" H 13500 4825 50  0001 C CNN
 F 4 "mfr_pn" H 13500 4825 50  0001 C CNN "manf#"
 	1    13500 4825
@@ -3594,11 +3594,11 @@ F 3 "~" H 15375 5250 50  0001 C CNN
 	1    15375 5250
 	1    0    0    -1  
 $EndComp
-Text Label 14650 5950 0    40   ~ 8
+Text Label 14650 6250 0    40   ~ 8
 GND
 Text Label 14650 6050 0    40   ~ 8
 GND
-Text Label 14650 6250 0    40   ~ 8
+Text Label 14650 5950 0    40   ~ 8
 5V
 $Comp
 L mc60_library:CONN_01X08 H3
@@ -3606,7 +3606,7 @@ U 1 1 5D050875
 P 15375 5900
 F 0 "H3" H 15475 5950 40  0000 L CNB
 F 1 "CONTROL" H 15475 5875 40  0000 L CNN
-F 2 "mc60_fp:Pin_Header_Straight_2x04" H 15375 5900 50  0001 C CNN
+F 2 "mc60_fp:Pin_Header_Straight_2x04_Pitch1.27mm" H 15375 5900 50  0001 C CNN
 F 3 "" H 15375 5900 50  0000 C CNN
 	1    15375 5900
 	1    0    0    -1  
@@ -3800,42 +3800,6 @@ Wire Wire Line
 	9175 6750 9175 6725
 Text Label 9175 6725 0    40   ~ 8
 GND_REF
-Wire Notes Line
-	14600 6150 14550 6150
-Wire Notes Line
-	14550 6150 14525 6125
-Wire Notes Line
-	14525 6125 14525 6075
-Wire Notes Line
-	14525 6075 14550 6050
-Wire Notes Line
-	14550 6050 14600 6050
-Wire Notes Line
-	14550 6150 14525 6175
-Wire Notes Line
-	14525 6175 14525 6225
-Wire Notes Line
-	14525 6225 14550 6250
-Wire Notes Line
-	14550 6250 14600 6250
-Wire Notes Line
-	14600 5850 14550 5850
-Wire Notes Line
-	14550 5850 14525 5825
-Wire Notes Line
-	14525 5825 14525 5775
-Wire Notes Line
-	14525 5775 14550 5750
-Wire Notes Line
-	14550 5750 14600 5750
-Wire Notes Line
-	14550 5850 14525 5875
-Wire Notes Line
-	14525 5875 14525 5925
-Wire Notes Line
-	14525 5925 14550 5950
-Wire Notes Line
-	14550 5950 14600 5950
 Text Label 12325 1900 0    40   ~ 8
 GND
 Text Label 13625 1900 0    40   ~ 8
@@ -3936,4 +3900,20 @@ Text Label 9800 3250 0    40   ~ 8
 SIMCLK
 Text Label 9800 3550 0    40   ~ 8
 SIMDAT
+Wire Notes Line
+	14625 5850 14450 5850
+Wire Notes Line
+	14450 5750 14625 5750
+Wire Notes Line
+	14450 6050 14625 6050
+Wire Notes Line
+	14450 5750 14450 6050
+Wire Notes Line
+	14625 6150 14525 6150
+Wire Notes Line
+	14525 5950 14625 5950
+Wire Notes Line
+	14525 6250 14625 6250
+Wire Notes Line
+	14525 5950 14525 6250
 $EndSCHEMATC

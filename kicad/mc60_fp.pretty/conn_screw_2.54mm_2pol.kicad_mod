@@ -1,4 +1,4 @@
-(module conn_screw_2.54mm_2pol (layer F.Cu) (tedit 5AC5E565)
+(module mc60_fp:conn_screw_2.54mm_2pol (layer F.Cu) (tedit 5AE9FA7C)
   (descr "2-way 2.54mm pitch terminal block, Phoenix MPT series")
   (fp_text reference J2 (at 0.02 -4.50088) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
@@ -23,7 +23,7 @@
   (pad 1 thru_hole rect (at -1.27 0) (size 1.8 2.2) (drill 1.1) (layers *.Cu *.Mask))
   (pad "" np_thru_hole circle (at -1.27 2.54) (size 1.1 1.1) (drill 1.1) (layers *.Cu *.Mask))
   (pad "" np_thru_hole circle (at 1.27 2.54) (size 1.1 1.1) (drill 1.1) (layers *.Cu *.Mask))
-  (model ${KIPRJMOD}/wyostat_3d_modules/conn_phoenix_MPT.wrl
+  (model ${KIPRJMOD}/3d_modules/conn_phoenix_MPT.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

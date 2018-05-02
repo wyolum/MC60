@@ -1,4 +1,4 @@
-(module TO-252-5_TabPin3 (layer F.Cu) (tedit 5ADB89A5)
+(module mc60_fp:TO-252-5_TabPin3 (layer F.Cu) (tedit 5AE9FC21)
   (descr "TO-252 / DPAK SMD package, http://www.infineon.com/cms/en/product/packages/PG-TO252/PG-TO252-5-11/")
   (tags "DPAK TO-252 DPAK-5 TO-252-5")
   (attr smd)
@@ -49,7 +49,7 @@
   (pad 4 smd rect (at 0 1.27) (size 2.2 0.76) (layers F.Cu F.Paste F.Mask))
   (pad 5 smd rect (at 0 2.54) (size 2.2 0.76) (layers F.Cu F.Paste F.Mask))
   (pad 3 smd rect (at 6.675 0) (size 5.85 7.1) (layers F.Cu F.Mask))
-  (model ${KISYS3DMOD}/TO_SOT_Packages_SMD.3dshapes/TO-252-5_TabPin3.wrl
+  (model ${KIPRJMOD}/3d_modules/TO_252_5_TabPin3.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

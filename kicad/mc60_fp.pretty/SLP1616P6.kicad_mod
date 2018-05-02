@@ -1,4 +1,4 @@
-(module SLP1616P6 (layer F.Cu) (tedit 5ADB0B3E)
+(module mc60_fp:SLP1616P6 (layer F.Cu) (tedit 5AE9FBC7)
   (fp_text reference REF** (at 0 1.5) (layer F.SilkS)
     (effects (font (size 0.6 0.6) (thickness 0.05)))
   )
@@ -30,4 +30,9 @@
     (solder_mask_margin 0.08) (clearance 0.08))
   (pad 7 smd rect (at 0 0) (size 1.3 0.45) (layers F.Cu F.Paste F.Mask)
     (solder_mask_margin 0.08) (clearance 0.08))
+  (model ${KIPRJMOD}/3d_modules/SLP1616P6.wrl
+    (at (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
 )

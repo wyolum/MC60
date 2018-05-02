@@ -1,4 +1,4 @@
-(module conn_uFL_RF (layer F.Cu) (tedit 5ADD8F6E)
+(module mc60_fp:conn_uFL_RF (layer F.Cu) (tedit 5AE9FA8F)
   (descr "Molex Microcoaxial RF, mates Hirose U.FL, http://www.molex.com/pdm_docs/sd/734120110_sd.pdf")
   (tags "mcrf hirose ufl u.fl microcoaxial")
   (attr smd)
@@ -33,7 +33,7 @@
   (pad 2 smd rect (at 0 -1.5) (size 1 1) (layers F.Cu F.Paste F.Mask))
   (pad 2 smd rect (at 1.475 0) (size 1.05 2.2) (layers F.Cu F.Paste F.Mask))
   (pad 2 smd rect (at -1.475 0) (size 1.05 2.2) (layers F.Cu F.Paste F.Mask))
-  (model ${KISYS3DMOD}/Connectors_Molex.3dshapes/Molex_Microcoaxial_RF.wrl
+  (model ${KIPRJMOD}/3d_modules/conn_rf_uFL_3450020P1.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

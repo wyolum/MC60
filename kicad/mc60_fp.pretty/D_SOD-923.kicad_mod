@@ -1,4 +1,4 @@
-(module D_SOD-923 (layer F.Cu) (tedit 5ADD8A3B)
+(module mc60_fp:D_SOD-923 (layer F.Cu) (tedit 5AE9FB12)
   (descr SOD-123)
   (tags SOD-123)
   (attr smd)
@@ -24,7 +24,7 @@
     (solder_mask_margin 0.1) (clearance 0.1))
   (pad 2 smd rect (at 0.42 0) (size 0.36 0.25) (layers F.Cu F.Paste F.Mask)
     (solder_mask_margin 0.1) (clearance 0.1))
-  (model ${KISYS3DMOD}/Diodes_SMD.3dshapes/D_SOD-123.wrl
+  (model ${KIPRJMOD}/3d_modules/diode_SOD923.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

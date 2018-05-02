@@ -1,4 +1,4 @@
-(module Pin_Header_Straight_2x04 (layer F.Cu) (tedit 0)
+(module mc60_fp:Pin_Header_Straight_2x04 (layer F.Cu) (tedit 5AE9FB9C)
   (descr "Through hole pin header")
   (tags "pin header")
   (fp_text reference REF** (at 0 -5.1) (layer F.SilkS)
@@ -27,8 +27,8 @@
   (pad 6 thru_hole oval (at 2.54 5.08) (size 1.7272 1.7272) (drill 1.016) (layers *.Cu *.Mask F.SilkS))
   (pad 7 thru_hole oval (at 0 7.62) (size 1.7272 1.7272) (drill 1.016) (layers *.Cu *.Mask F.SilkS))
   (pad 8 thru_hole oval (at 2.54 7.62) (size 1.7272 1.7272) (drill 1.016) (layers *.Cu *.Mask F.SilkS))
-  (model Pin_Headers.3dshapes/Pin_Header_Straight_2x04.wrl
-    (offset (xyz 1.269999980926514 -3.809999942779541 0))
+  (model ${KIPRJMOD}/3d_modules/Pin_Header_Straight_2x04_Pitch254mm.wrl
+    (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 90))
   )

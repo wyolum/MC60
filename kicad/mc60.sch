@@ -1608,13 +1608,11 @@ NoConn ~ 5150 4200
 NoConn ~ 5150 4300
 NoConn ~ 5150 4400
 NoConn ~ 5150 4500
-Text Label 14650 6150 0    40   ~ 8
-GSM_PWR_EN
-Text Label 14650 5850 0    40   ~ 8
+Text Label 14650 6050 0    40   ~ 8
 RST
-Text Label 14650 5550 0    40   ~ 8
+Text Label 14650 5650 0    40   ~ 8
 3V3_EXT
-Text Label 14650 5750 0    40   ~ 8
+Text Label 14650 5950 0    40   ~ 8
 5V
 Text Label 12175 6225 0    40   ~ 8
 SD_DET>
@@ -2247,9 +2245,9 @@ Wire Wire Line
 Wire Wire Line
 	8375 6250 7875 6250
 Text Label 7875 5850 0    40   ~ 8
-MIC+
+MIC_P
 Text Label 7875 6250 0    40   ~ 8
-MIC-
+MIC_N
 $Comp
 L mc60_library:C_NP C22
 U 1 1 5BF532E7
@@ -2385,9 +2383,9 @@ F 4 "SJ-43514-SMT-TR" H 11375 4725 50  0001 C CNN "manf#"
 	-1   0    0    -1  
 $EndComp
 Text Label 1450 2600 0    40   ~ 8
-MIC+
+MIC_P
 Text Label 1450 2700 0    40   ~ 8
-MIC-
+MIC_N
 Wire Wire Line
 	1450 2600 1950 2600
 Wire Wire Line
@@ -3594,23 +3592,8 @@ F 3 "~" H 15375 5250 50  0001 C CNN
 	1    15375 5250
 	1    0    0    -1  
 $EndComp
-Text Label 14650 6250 0    40   ~ 8
+Text Label 14650 6150 0    40   ~ 8
 GND
-Text Label 14650 6050 0    40   ~ 8
-GND
-Text Label 14650 5950 0    40   ~ 8
-5V
-$Comp
-L mc60_library:CONN_01X08 H3
-U 1 1 5D050875
-P 15375 5900
-F 0 "H3" H 15475 5950 40  0000 L CNB
-F 1 "CONTROL" H 15475 5875 40  0000 L CNN
-F 2 "mc60_fp:Pin_Header_Straight_2x04_Pitch1.27mm" H 15375 5900 50  0001 C CNN
-F 3 "" H 15375 5900 50  0000 C CNN
-	1    15375 5900
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	14650 5150 15175 5150
 Wire Wire Line
@@ -3618,23 +3601,17 @@ Wire Wire Line
 Wire Wire Line
 	14650 5350 15175 5350
 Wire Wire Line
-	14650 5550 15175 5550
-Wire Wire Line
-	14650 5750 15175 5750
-Wire Wire Line
-	14650 5850 15175 5850
+	14650 5650 15175 5650
 Wire Wire Line
 	14650 5950 15175 5950
 Wire Wire Line
 	14650 6050 15175 6050
 Wire Wire Line
 	14650 6150 15175 6150
-Wire Wire Line
-	14650 6250 15175 6250
-Text Label 14650 5650 0    40   ~ 8
+Text Label 14650 5750 0    40   ~ 8
 GND
 Wire Wire Line
-	14650 5650 15175 5650
+	14650 5750 15175 5750
 Wire Notes Line
 	14350 4475 15850 4475
 Wire Notes Line
@@ -3901,19 +3878,119 @@ SIMCLK
 Text Label 9800 3550 0    40   ~ 8
 SIMDAT
 Wire Notes Line
-	14625 5850 14450 5850
+	14625 6050 14450 6050
 Wire Notes Line
-	14450 5750 14625 5750
+	14450 5950 14625 5950
 Wire Notes Line
-	14450 6050 14625 6050
+	14450 6150 14625 6150
 Wire Notes Line
-	14450 5750 14450 6050
-Wire Notes Line
-	14625 6150 14525 6150
-Wire Notes Line
-	14525 5950 14625 5950
-Wire Notes Line
-	14525 6250 14625 6250
-Wire Notes Line
-	14525 5950 14525 6250
+	14450 5950 14450 6150
+$Comp
+L mc60_library:Conn_01x03 H4
+U 1 1 5AEB162A
+P 15375 6050
+F 0 "H4" H 15455 6085 40  0000 L CNB
+F 1 "ON_OFF" H 15455 6010 40  0000 L CNN
+F 2 "mc60_fp:Pin_Header_Straight_1x03" H 15375 6050 50  0001 C CNN
+F 3 "~" H 15375 6050 50  0001 C CNN
+	1    15375 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L mc60_library:Conn_01x03 H3
+U 1 1 5AF2F0FE
+P 15375 5650
+F 0 "H3" H 15455 5685 40  0000 L CNB
+F 1 "3V3_EXT" H 15455 5610 40  0000 L CNN
+F 2 "mc60_fp:Pin_Header_Straight_1x03" H 15375 5650 50  0001 C CNN
+F 3 "~" H 15375 5650 50  0001 C CNN
+	1    15375 5650
+	1    0    0    -1  
+$EndComp
+Text Label 14650 5550 0    40   ~ 8
+GND
+Wire Wire Line
+	14650 5550 15175 5550
+$Comp
+L mc60_library:SCREW SC1
+U 1 1 5B06DB34
+P 12000 9000
+F 0 "SC1" H 12085 9000 40  0000 L CNN
+F 1 "SCREW" H 12000 9100 40  0001 C CNN
+F 2 "mc60_fp:mtg_hole_3mm_vias_2" H 12000 9000 60  0001 C CNN
+F 3 "" H 12000 9000 60  0000 C CNN
+	1    12000 9000
+	1    0    0    -1  
+$EndComp
+$Comp
+L mc60_library:SCREW SC2
+U 1 1 5B06DFE3
+P 12500 9000
+F 0 "SC2" H 12585 9000 40  0000 L CNN
+F 1 "SCREW" H 12500 9100 40  0001 C CNN
+F 2 "mc60_fp:mtg_hole_3mm_vias_2" H 12500 9000 60  0001 C CNN
+F 3 "" H 12500 9000 60  0000 C CNN
+	1    12500 9000
+	1    0    0    -1  
+$EndComp
+$Comp
+L mc60_library:SCREW SC3
+U 1 1 5B06E0FB
+P 13000 9000
+F 0 "SC3" H 13085 9000 40  0000 L CNN
+F 1 "SCREW" H 13000 9100 40  0001 C CNN
+F 2 "mc60_fp:mtg_hole_3mm_vias_2" H 13000 9000 60  0001 C CNN
+F 3 "" H 13000 9000 60  0000 C CNN
+	1    13000 9000
+	1    0    0    -1  
+$EndComp
+$Comp
+L mc60_library:SCREW SC4
+U 1 1 5B06E1FD
+P 13500 9000
+F 0 "SC4" H 13585 9000 40  0000 L CNN
+F 1 "SCREW" H 13500 9100 40  0001 C CNN
+F 2 "mc60_fp:mtg_hole_3mm_vias_2" H 13500 9000 60  0001 C CNN
+F 3 "" H 13500 9000 60  0000 C CNN
+	1    13500 9000
+	1    0    0    -1  
+$EndComp
+Text Notes 12525 9225 0    40   ~ 0
+Mounting Holes
+$Comp
+L mc60_library:KiCad G2
+U 1 1 5B06F120
+P 15225 10250
+F 0 "G2" H 15225 9982 60  0001 C CNN
+F 1 "KiCad" H 15225 10518 60  0001 C CNN
+F 2 "mc60_fp:KiCad-Logo2_6mm_SilkScreen" H 15225 10250 60  0001 C CNN
+F 3 "" H 15225 10250 60  0001 C CNN
+F 4 "Value" H 15225 10250 50  0001 C CNN "manf#"
+	1    15225 10250
+	1    0    0    -1  
+$EndComp
+$Comp
+L mc60_library:LOGO_WL G3
+U 1 1 5B06F38A
+P 12025 10300
+F 0 "G3" H 12025 10164 60  0001 C CNN
+F 1 "LOGO_WL" H 12025 10436 60  0001 C CNN
+F 2 "mc60_fp:Logo-WL3" H 12025 10300 60  0001 C CNN
+F 3 "" H 12025 10300 60  0001 C CNN
+F 4 "Value" H 12025 10300 50  0001 C CNN "manf#"
+	1    12025 10300
+	1    0    0    -1  
+$EndComp
+$Comp
+L mc60_library:OSHW G1
+U 1 1 5B06F7CF
+P 14725 9525
+F 0 "G1" H 14725 9475 40  0001 C CNN
+F 1 "OSHW" H 14725 9625 40  0001 C CNN
+F 2 "mc60_fp:Logo_silk_OSHW_6x6mm" H 14725 9525 60  0001 C CNN
+F 3 "" H 14725 9525 60  0000 C CNN
+F 4 "Value" H 14725 9525 50  0001 C CNN "manf#"
+	1    14725 9525
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

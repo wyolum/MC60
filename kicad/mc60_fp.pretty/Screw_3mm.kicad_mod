@@ -1,0 +1,12 @@
+(module Screw_3mm locked (layer F.Cu) (tedit 5437795D)
+  (descr "module 1 pin (ou trou mecanique de percage)")
+  (tags DEV)
+  (fp_text reference S1 (at 0 -3.4) (layer F.SilkS) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text value CONN_1 (at -0.1 0) (layer F.SilkS) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_circle (center 0 0) (end -3.5 0) (layer F.SilkS) (width 0.15))
+  (pad 1 thru_hole circle (at 0 0) (size 6.5 6.5) (drill 3.25) (layers *.Cu *.Mask F.SilkS))
+)

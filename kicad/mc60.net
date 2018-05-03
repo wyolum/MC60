@@ -1,8 +1,8 @@
 (export (version D)
   (design
     (source /home/anool/projects-git/MC60/kicad/mc60.sch)
-    (date "Mon Apr 30 15:08:24 2018")
-    (tool "Eeschema 5.0.0-rc2-dev-unknown-648803d~64~ubuntu17.10.1")
+    (date "Thu May  3 13:10:31 2018")
+    (tool "Eeschema 5.0.0-rc2-dev-unknown-5d71153~64~ubuntu17.10.1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
         (title MC60)
@@ -652,7 +652,7 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 5AE1C71C))
     (comp (ref H4)
-      (value ON_OFF)
+      (value ON<>OFF)
       (footprint mc60_fp:Pin_Header_Straight_1x03)
       (libsource (lib mc60_library) (part Conn_01x03))
       (sheetpath (names /) (tstamps /))

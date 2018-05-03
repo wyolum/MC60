@@ -1,4 +1,52 @@
-Cmp-Mod V01 Created by PcbNew   date = Wed May  2 17:56:30 2018
+Cmp-Mod V01 Created by PcbNew   date = Thu May  3 15:28:32 2018
+
+BeginCmp
+TimeStamp = 5B23E499
+Path = /5ADAB17E
+Reference = C35;
+ValeurCmp = 100uF;
+IdModule  = mc60_fp:CP_Elec_8x10.5;
+EndCmp
+
+BeginCmp
+TimeStamp = 5B23E4CF
+Path = /5AF8BD07
+Reference = C40;
+ValeurCmp = 100uF;
+IdModule  = mc60_fp:CP_Elec_8x10.5;
+EndCmp
+
+BeginCmp
+TimeStamp = 5B2E3F00
+Path = /5AF8CCB5
+Reference = C30;
+ValeurCmp = 470uF;
+IdModule  = mc60_fp:CP_Elec_10x10;
+EndCmp
+
+BeginCmp
+TimeStamp = 5B0C3AC1
+Path = /5AD7E1D2
+Reference = C27;
+ValeurCmp = 470uF;
+IdModule  = mc60_fp:CP_Elec_10x10;
+EndCmp
+
+BeginCmp
+TimeStamp = 5B0C3AEE
+Path = /5AD9A4B1
+Reference = C29;
+ValeurCmp = 470uF;
+IdModule  = mc60_fp:CP_Elec_10x10;
+EndCmp
+
+BeginCmp
+TimeStamp = 5B0C38FC
+Path = /5AE0FA6D
+Reference = C1;
+ValeurCmp = 4u7;
+IdModule  = mc60_fp:C_0805;
+EndCmp
 
 BeginCmp
 TimeStamp = 5AFBC1CF
@@ -97,14 +145,6 @@ IdModule  = mc60_fp:SOT-323_SC-70;
 EndCmp
 
 BeginCmp
-TimeStamp = 5B2E3F00
-Path = /5AF8CCB5
-Reference = C30;
-ValeurCmp = 470uF;
-IdModule  = mc60_fp:CP_Elec_10x10;
-EndCmp
-
-BeginCmp
 TimeStamp = 5B0C3DA5
 Path = /5CF7EB7F
 Reference = H1;
@@ -116,16 +156,8 @@ BeginCmp
 TimeStamp = 5AF16A4D
 Path = /5AEB162A
 Reference = H4;
-ValeurCmp = ON_OFF;
+ValeurCmp = ON<>OFF;
 IdModule  = mc60_fp:Pin_Header_Straight_1x03;
-EndCmp
-
-BeginCmp
-TimeStamp = 5B23E499
-Path = /5ADAB17E
-Reference = C35;
-ValeurCmp = 100uF;
-IdModule  = mc60_fp:CP_Elec_8x10.5;
 EndCmp
 
 BeginCmp
@@ -137,7 +169,7 @@ IdModule  = mc60_fp:Pin_Header_Straight_1x03_Pitch1.27mm;
 EndCmp
 
 BeginCmp
-TimeStamp = 5ADF08CC
+TimeStamp = 5AEB093A
 Path = /5ACD6E55
 Reference = C9;
 ValeurCmp = 33pF;
@@ -158,14 +190,6 @@ Path = /5BB86018
 Reference = C2;
 ValeurCmp = 10pF_DNP;
 IdModule  = mc60_fp:C_0603;
-EndCmp
-
-BeginCmp
-TimeStamp = 5B0C38FC
-Path = /5AE0FA6D
-Reference = C1;
-ValeurCmp = 4u7;
-IdModule  = mc60_fp:C_0805;
 EndCmp
 
 BeginCmp
@@ -222,22 +246,6 @@ Path = /5C0691B5
 Reference = C26;
 ValeurCmp = 10uF;
 IdModule  = mc60_fp:C_0805;
-EndCmp
-
-BeginCmp
-TimeStamp = 5B0C3AC1
-Path = /5AD7E1D2
-Reference = C27;
-ValeurCmp = 470uF;
-IdModule  = mc60_fp:CP_Elec_10x10;
-EndCmp
-
-BeginCmp
-TimeStamp = 5B0C3AEE
-Path = /5AD9A4B1
-Reference = C29;
-ValeurCmp = 470uF;
-IdModule  = mc60_fp:CP_Elec_10x10;
 EndCmp
 
 BeginCmp
@@ -313,7 +321,7 @@ IdModule  = mc60_fp:SLP1616P6;
 EndCmp
 
 BeginCmp
-TimeStamp = 5B0C3D05
+TimeStamp = 5AEA9947
 Path = /5AD8C8B2
 Reference = D2;
 ValeurCmp = LED_NET;
@@ -649,7 +657,7 @@ IdModule  = mc60_fp:C_0402_NoSilk;
 EndCmp
 
 BeginCmp
-TimeStamp = 5B23E453
+TimeStamp = 5AEB04CC
 Path = /5BDC3508
 Reference = C25;
 ValeurCmp = 10pF;
@@ -702,14 +710,6 @@ Path = /5ADB076C
 Reference = C39;
 ValeurCmp = 100nF;
 IdModule  = mc60_fp:C_0402_NoSilk;
-EndCmp
-
-BeginCmp
-TimeStamp = 5B23E4CF
-Path = /5AF8BD07
-Reference = C40;
-ValeurCmp = 100uF;
-IdModule  = mc60_fp:CP_Elec_8x10.5;
 EndCmp
 
 BeginCmp
@@ -785,7 +785,7 @@ IdModule  = mc60_fp:R_0402_NoSilk;
 EndCmp
 
 BeginCmp
-TimeStamp = 5B23E583
+TimeStamp = 5AEBFAFB
 Path = /5B026E77
 Reference = R13;
 ValeurCmp = 0E;

@@ -3724,7 +3724,7 @@ Wire Wire Line
 Connection ~ 3200 1200
 Text Notes 14400 4575 0    50   Italic 10
 HEADERS
-Text Notes 1875 8250 0    50   Italic 10
+Text Notes 625  8325 0    50   Italic 10
 5V/3A (2A min)
 Text Notes 4525 8250 0    50   Italic 10
 4V for GPS DOMAIN
@@ -3736,10 +3736,10 @@ Text Notes 3875 10700 0    40   ~ 0
 Reference design does not have SD-Card\nmikroe.de "click" uses VDD_EXT which is limited to 20mA max\nSome SD-Cards require up to 100mA during Write cycles 
 Text Notes 11875 6850 0    40   ~ 0
 UART output voltage can be either\n5V (derived from main input) or\n3V3 (derived from external input)
-Text Notes 600  10075 0    40   ~ 0
+Text Notes 600  10125 0    40   ~ 0
 JP2 > 5V = OFF (VReg U3 is disabled).\nJP2 > GND = ON (VReg U3 is enabled).\n
-Text Notes 14750 2875 0    40   ~ 0
-Power control\nPush S1 for ON, Push S1 for OFF\nOR via external "RST" signal
+Text Notes 14725 2875 0    40   ~ 0
+Power control\nPush S1 for ON, Push S1 for OFF\nOR via external "RST" signal on H4
 Text Notes 13250 2850 0    40   ~ 0
 LED flashes at 1pps\nafter GPS fix
 Text Notes 11950 2850 0    40   ~ 0
@@ -3890,7 +3890,7 @@ L mc60_library:Conn_01x03 H4
 U 1 1 5AEB162A
 P 15375 6050
 F 0 "H4" H 15455 6085 40  0000 L CNB
-F 1 "ON_OFF" H 15455 6010 40  0000 L CNN
+F 1 "ON<>OFF" H 15455 6010 40  0000 L CNN
 F 2 "mc60_fp:Pin_Header_Straight_1x03" H 15375 6050 50  0001 C CNN
 F 3 "~" H 15375 6050 50  0001 C CNN
 	1    15375 6050

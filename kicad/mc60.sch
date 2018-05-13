@@ -2455,9 +2455,6 @@ Wire Wire Line
 Connection ~ 9750 5150
 Wire Wire Line
 	9750 5150 9950 5150
-Wire Wire Line
-	9550 4725 7875 4725
-Connection ~ 9550 4725
 Text Label 7875 4725 0    40   ~ 8
 LOUD_SPKP
 $Comp
@@ -3582,14 +3579,15 @@ Connection ~ 14700 3450
 Text Label 14775 3375 2    40   ~ 8
 5V
 $Comp
-L mc60_library:Conn_01x03 H1
+L mc60_library:Conn_01x04 H1
 U 1 1 5CF7EB7F
-P 15375 5250
-F 0 "H1" H 15475 5300 40  0000 L CNB
-F 1 "UART_DBG" H 15475 5225 40  0000 L CNN
-F 2 "mc60_fp:Pin_Header_Straight_1x03" H 15375 5250 50  0001 C CNN
-F 3 "~" H 15375 5250 50  0001 C CNN
-	1    15375 5250
+P 15375 5150
+F 0 "H1" H 15475 5200 40  0000 L CNB
+F 1 "UART_DBG" H 15475 5125 40  0000 L CNN
+F 2 "mc60_fp:Pin_Header_Straight_1x04" H 15375 5150 50  0001 C CNN
+F 3 "~" H 15375 5150 50  0001 C CNN
+F 4 "mfr_pn" H 15375 5150 50  0001 C CNN "manf#"
+	1    15375 5150
 	1    0    0    -1  
 $EndComp
 Text Label 14650 6150 0    40   ~ 8
@@ -3993,4 +3991,45 @@ F 4 "Value" H 14725 9525 50  0001 C CNN "manf#"
 	1    14725 9525
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	15175 5050 14650 5050
+Text Label 14650 5050 0    40   ~ 8
+VDD_EXT
+$Comp
+L mc60_library:IND_FERRITE_BEAD L1
+U 1 1 5B003379
+P 9075 4725
+F 0 "L1" H 9075 4850 40  0000 C CNN
+F 1 "0E" H 9075 4625 40  0000 C CNN
+F 2 "mc60_fp:R_0402_NoSilk" H 9075 4725 60  0001 C CNN
+F 3 "" H 9040 4815 60  0000 C CNN
+F 4 "mfr_pn" H 9075 4725 50  0001 C CNN "manf#"
+	1    9075 4725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9550 4725 9275 4725
+Connection ~ 9550 4725
+Wire Wire Line
+	8875 4725 7875 4725
+Text Label 10000 4725 0    40   ~ 8
+L_SP
+Text Notes 8875 4975 0    30   ~ 6
+*USE FERRITE BEAD\nIF NECESSARY*
+$Comp
+L mc60_library:C_NP C45
+U 1 1 5B0C20C4
+P 14750 4025
+F 0 "C45" H 14900 3925 40  0000 R CNB
+F 1 "33pF" H 14925 4125 40  0000 R CNN
+F 2 "mc60_fp:C_0402_NoSilk" H 14750 4025 60  0001 C CNN
+F 3 "" H 14750 4025 60  0000 C CNN
+	1    14750 4025
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	14750 3875 14750 3850
+Wire Wire Line
+	14750 4175 14750 4200
+Connection ~ 14750 4200
 $EndSCHEMATC

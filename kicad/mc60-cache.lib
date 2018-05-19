@@ -663,20 +663,6 @@ X ~ 2 0 -150 50 U 60 60 1 1 P
 ENDDRAW
 ENDDEF
 #
-# mc60_library:SCREW
-#
-DEF ~mc60_library:SCREW SC 0 0 N N 1 F N
-F0 "SC" 0 -100 40 H V C CNN
-F1 "mc60_library:SCREW" 0 100 40 H I C CNN
-F2 "" 0 0 60 H V C CNN
-F3 "" 0 0 60 H V C CNN
-DRAW
-C 0 0 50 0 1 20 f
-P 2 0 1 0 0 50 0 -50 N
-P 2 0 1 0 50 0 -50 0 N
-ENDDRAW
-ENDDEF
-#
 # mc60_library:SD_CARD_Micro
 #
 DEF mc60_library:SD_CARD_Micro SD 0 40 Y Y 1 F N

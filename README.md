@@ -5,7 +5,7 @@ http://www.quectel.com/product/mc60.htm
 
 ![MC60](https://github.com/wyolum/MC60/blob/master/kicad/mc60_images/mc60-05.png)
 
-![MC60](https://github.com/wyolum/MC60/blob/master/kicad/mc60_images/mc60-03.png)
+![MC60](https://github.com/wyolum/MC60/blob/master/kicad/mc60_images/mc60-01.png)
 
 License
 -------
